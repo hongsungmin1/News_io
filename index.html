@@ -12,28 +12,32 @@
     <header>
         <div class="container-fluid bg-primary text-white">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
                     <h1>my news app</h1>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="my-5">
         <div class="container">
             <div class="row">
-                <form action="new_form">
-                    <fieldset>
-                        <legend>검색</legend>
-                        <label for="keyword">키워드</label>
-                        <input type="text" name="keyword" id="keyword" placeholder="검색어를 입력하세요">
-                        <input type="submit" value="검색">
-                    </fieldset>
-                </form>
+                <div class="col-sm-12">
+                    <form id="news_form" class="d-flex justify-content-center" autocomplete="off">
+                        <fieldset>
+                            <legend class="d-none">검색</legend>
+                            <label for="keyword">키워드</label>
+                            <input type="text" name="keyword" id="keyword" placeholder="검색어를 입력하세요">
+                            <input type="submit" value="검색">
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
-    <div class="container">
-        <div id="news" class="row">검색어를 입력하세요</div>
+    <div class="container my-5">
+        <div id="news" class="row">
+            <div class="col text-center">검색어를 입력하세요</div>
+        </div>
     </div>
     <script src="newsdata.js"></script>
 </body>
